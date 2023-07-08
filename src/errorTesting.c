@@ -7,7 +7,7 @@ const int NUM_OF_ARGS = 2;
 
 // Default infile format data
 const int INFILE_EXT_LEN = 4;
-const char INFILE_FORMAT[INFILE_EXT_LEN] = ".csv";
+const char INFILE_FORMAT[] = ".csv";
 
 // Test to make sure argc is correct number
 bool errorTestArgc(int argc) {
@@ -22,7 +22,7 @@ bool errorTestArgc(int argc) {
 bool errorTestInfile(char* arg) {
 
 	// If arg doesn't exist, return false
-	if (!arg || !(&arg)) {
+	if (!arg || !(*arg)) {
 		return false;
 	}
 

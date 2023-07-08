@@ -1,8 +1,11 @@
 # Define C compiler
-$(CC) = gcc
+CC = gcc
+
+# Define outfile name
+outfile = outfile
 
 outfile:
-	$(CC) src/main.c src/errorTesting.C
+	$(CC) src/main.c src/errorTesting.c -o $(outfile)
 
 clean:
-	rm *.o $(outfile)
+	rm *.o *.out $(outfile)
