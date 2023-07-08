@@ -1,6 +1,6 @@
 #include <stdbool.h>
 #include <string.h>
-#include "header.h"
+#include "../headers/header.h"
 
 // Number of arguments to be input by user
 const int NUM_OF_ARGS = 2;
