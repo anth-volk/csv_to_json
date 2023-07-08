@@ -1,2 +1,2 @@
-bool errorTestArgc(int);
-bool errorTestInfile(char*);
+bool errorTestArgc(int argc);
+bool errorTestInfile(char* arg);
