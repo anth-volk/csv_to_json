@@ -13,12 +13,16 @@ int main(int argc, char* argv[]) {
 	}
 
 	// Throw error if infile isn't of type 'csv'
-	if (!errorTestFile(argv[1], "infile")) {
+	if (!errorTestFile(argv[1], 'i')) {
 		printf("Program requires a CSV-formatted infile as the first argument, including the .csv extension\n");
 		return 2;
 	}
 
 	// Throw error if outfile isn't of type 'json'
+	if (!errorTestFile(argv[2], 'o')) {
+		printf("Program requires a JSON-formatted outfile as the second argument, including the .json extension\n");
+		return 3;
+	}
 
 	// Attempt to open infile
 
