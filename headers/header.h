@@ -7,3 +7,5 @@ int errorExit(char* message, int errorCode);
 
 // From utils.c
 char* strInitCpy(char* string);
+
+// From csvReading.c

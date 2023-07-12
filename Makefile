@@ -10,7 +10,7 @@ clean:
 	rm -rf headers/header.h.gch
 
 debug: clean
-	$(CC) src/main.c src/errorTesting.c src/utils.c -ggdb -o $(outfile)
+	$(CC) src/main.c src/errorTesting.c src/utils.c src/csvReading.c -ggdb -o $(outfile)
 
 final: clean
-	$(CC) src/main.c src/errorTesting.c src/utils.c -o $(outfile)
+	$(CC) src/main.c src/errorTesting.c src/utils.c src/csvReading.c -o $(outfile)
