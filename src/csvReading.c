@@ -1,7 +1,7 @@
 
 #include "../headers/header.h"
 
-// Function to read a line
+char DELIMITER = ',';
 
 // Function to tokenize a line, 
 // then return an array

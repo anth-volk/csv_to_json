@@ -53,8 +53,6 @@ int main(int argc, char* argv[]) {
 		return errorExit("Error while trying to open outfile; please try again later", 5);
 	}
 
-	// Set up file reader with delimiter
-
 	// Read first line into memory and store as an array
 
 	// For each next successive line, until EOF...
