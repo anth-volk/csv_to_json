@@ -11,7 +11,7 @@ const char INFILE_FORMAT[] = ".csv";
 
 // Test to make sure argc is correct number
 bool errorTestArgc(int argc) {
-	// Add one here because arg 0 is the program itself
+	// Add one here because arg 0 is the program invocation itself
 	if (argc != (NUM_OF_ARGS + 1)) {
 		return false;
 	}
