@@ -39,14 +39,12 @@ bool errorTestFile(char* arg, char option) {
 		case 'i':
 		case 'I':
 			ext_len = strlen(INFILE_EXT);
-			ext = calloc(ext_len + 1, sizeof(char));
-			strcpy(ext, INFILE_EXT);
+			ext = strInitCpy(INFILE_EXT);
 			break;
 		case 'o':
 		case 'O':
 			ext_len = strlen(OUTFILE_EXT);
-			ext = calloc(ext_len + 1, sizeof(char));
-			strcpy(ext, OUTFILE_EXT);
+			ext = strInitCpy(OUTFILE_EXT);
 			break;
 	}
 
