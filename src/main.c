@@ -13,9 +13,8 @@ int main(int argc, char* argv[]) {
 
 	// Throw error if user doesn't input both infile and outfile
 	if (!errorTestArgc(argc)) {
-		printf("Program requires two arguments: a CSV-formatted infile and a JSON-formatted destination\n");
+		fprintf(stderr, "Program requires two arguments: a CSV-formatted infile and a JSON-formatted destination\n");
 		return 1;
-		exit(EXIT_FAILURE);
 	}
 
 	// Declare variables for infile and outfile addresses
@@ -27,16 +26,14 @@ int main(int argc, char* argv[]) {
 
 	// Throw error if infile isn't of type 'csv'
 	if (!errorTestFile(infileAddr, 'i')) {
-		printf("Program requires a CSV-formatted infile as the first argument, including the .csv extension\n");
+		fprintf(stderr, "Program requires a CSV-formatted infile as the first argument, including the .csv extension\n");
 		return 2;
-		exit(EXIT_FAILURE);
 	}
 
 	// Throw error if outfile isn't of type 'json'
 	if (!errorTestFile(outfileAddr, 'o')) {
-		printf("Program requires a JSON-formatted outfile as the second argument, including the .json extension\n");
+		fprintf(stderr, "Program requires a JSON-formatted outfile as the second argument, including the .json extension\n");
 		return 3;
-		exit(EXIT_FAILURE);
 	}
 
 	// FILE CREATION AND OPENING
@@ -52,7 +49,6 @@ int main(int argc, char* argv[]) {
 	if (!infilePtr) {
 		fprintf(stderr, "Error while trying to open infile; please try again later");
 		return 4;
-		exit(EXIT_FAILURE);
 	}
 
 	// Attempt to open outfile
