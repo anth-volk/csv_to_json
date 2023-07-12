@@ -8,8 +8,8 @@
 const int NUM_OF_ARGS = 2;
 
 // Default file extensions
-const char* INFILE_EXT = ".csv";
-const char* OUTFILE_EXT = ".json";
+char* INFILE_EXT = ".csv";
+char* OUTFILE_EXT = ".json";
 
 // Test to make sure argc is correct number
 bool errorTestArgc(int argc) {
