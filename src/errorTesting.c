@@ -23,7 +23,7 @@ bool errorTestArgc(int argc) {
 bool errorTestInfile(char* arg) {
 
 	// If arg doesn't exist, return false
-	if (!arg || !(*arg)) {
+	if (!arg) {
 		return false;
 	}
 
