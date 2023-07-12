@@ -7,9 +7,10 @@ outfile = outfile
 clean:
 	rm -f *.o *.out $(outfile)
 	rm -rf outfile.dSYM
+	rm -rf headers/header.h.gch
 
 debug: clean
-	$(CC) src/main.c src/errorTesting.c -ggdb -o $(outfile)
+	$(CC) src/main.c src/errorTesting.c src/utils.c -ggdb -o $(outfile)
 
 final: clean
-	$(CC) src/main.c src/errorTesting.c -o $(outfile)
+	$(CC) src/main.c src/errorTesting.c src/utils.c -o $(outfile)

@@ -17,11 +17,9 @@ int main(int argc, char* argv[]) {
 	}
 
 	// Declare variables for infile and outfile addresses
-	char* infileAddr = NULL;
-	strcpy(infileAddr, argv[1]);
+	char* infileAddr = strInitCpy(argv[1]);
 
-	char* outfileAddr = NULL;
-	strcpy(outfileAddr, argv[2]);
+	char* outfileAddr = strInitCpy(argv[2]);
 
 	// Throw error if infile isn't of type 'csv'
 	if (!errorTestFile(infileAddr, 'i')) {
@@ -48,8 +46,12 @@ int main(int argc, char* argv[]) {
 	}
 
 	// Attempt to open outfile
+	outfilePtr = fopen(outfileAddr, "w");
 
 	// If unable to open outfile, crash
+	if (!outfilePtr) {
+		return errorExit("Error while trying to open outfile; please try again later", 5);
+	}
 
 	// Set up file reader with delimiter
 
