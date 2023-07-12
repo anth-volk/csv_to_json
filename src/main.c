@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	// Throw error if infile isn't of type 'csv'
-	if (!errorTestInfile(argv[1])) {
+	if (!errorTestFile(argv[1], "infile")) {
 		printf("Program requires a CSV-formatted infile as the first argument, including the .csv extension\n");
 		return 2;
 	}

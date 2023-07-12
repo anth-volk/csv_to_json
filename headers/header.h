@@ -1,4 +1,4 @@
 #include <stdbool.h>
 
 bool errorTestArgc(int argc);
-bool errorTestInfile(char* arg);
+bool errorTestFile(char* arg, char* option);
