@@ -72,3 +72,12 @@ bool errorTestFile(char* arg, char option) {
 	return true;
 
 }
+
+int errorExit(char* message, int errorCode) {
+
+	// Print error message to stderr
+	fprintf(stderr, "%s\n", message);
+
+	// Return errorCode so as to allow main to return, as well
+	return errorCode;
+}
