@@ -3,7 +3,7 @@
 
 char DELIMITER = ',';
 
-// Function to tokenize a line, 
+// Function to tokenize a line into CSV elements, 
 // then return an array
 
 // Function that takes key and value array, 

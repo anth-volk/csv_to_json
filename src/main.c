@@ -50,7 +50,7 @@ int main(int argc, char* argv[]) {
 
 	// If unable to open outfile, crash
 	if (!outfilePtr) {
-		return errorExit("Error while trying to open outfile; please try again later", 5);
+		return errorExit("Error while trying to open outfile; please try again", 5);
 	}
 
 	// Read first line into memory and store as an array
