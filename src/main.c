@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <stddef.h>
 #include "../headers/header.h"
 
 // Main function
@@ -53,7 +54,16 @@ int main(int argc, char* argv[]) {
 		return errorExit("Error while trying to open outfile; please try again", 5);
 	}
 
-	// Read first line into memory and store as an array
+	// Create variables to store read CSV columns
+	char* headerRow;
+	size_t bufferSize = 0;
+	headerRow = malloc(bufferSize * sizeof(char));
+
+	// Read first line into memory
+	getline(&headerRow, &bufferSize, infilePtr);
+
+	// Tokenize first line and store as array
+
 
 	// For each next successive line, until EOF...
 		// Print key:value, using relevant tag from array as key, so long as key and value exist, else skip
