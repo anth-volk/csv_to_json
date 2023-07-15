@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #include "../headers/node.h"
 
 
@@ -16,8 +17,10 @@ node* node_createEmptyNode(void) {
 node* node_createFilledNode(char* input) {
 
 	node* newNode = node_createEmptyNode();
+
+	fprintf(stdout, "New node created\n");
 	if (strlen(input) > 0) {
-		strcpy(newNode->word, input);
+		newNode->word = input;
 	}
 
 	return newNode;
