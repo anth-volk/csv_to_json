@@ -26,7 +26,7 @@ node* node_createFilledNode(char* input) {
 
 // Function to create empty node and add as last
 // element of existing linked list
-void node_addLast(node** head_ref, node** tail_ref, char* input) {
+node* node_addLast(node** head_ref, node** tail_ref, char* input) {
 
 	node* newNode = node_createEmptyNode();
 	newNode->word = input;
@@ -46,5 +46,8 @@ void node_addLast(node** head_ref, node** tail_ref, char* input) {
 		*tail_ref = newNode;
 
 	}
+
+	// Return the pointer to the new node for testing purposes
+	return newNode;
 
 }
