@@ -21,7 +21,7 @@ char* lineTokenize(char* line) {
 	strcpy(tokenNode->word, token);
 
 	// Set head to point to first token
-	tokenizedLineHead = &tokenNode;
+	tokenizedLineHead = tokenNode;
 
 	// Iterate through remaining tokens
 	while (token != NULL) {
