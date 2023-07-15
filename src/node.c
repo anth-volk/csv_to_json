@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <string.h>
+#include "../headers/node.h"
+
+
 
 // Function to create empty node
 node* node_createEmptyNode(void) {

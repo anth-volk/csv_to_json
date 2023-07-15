@@ -1,4 +1,4 @@
-outfile
+outfile.out
 outfile.json
-outfile.dSYM/*
+outfile.out.dSYM/*
 infile.csv
