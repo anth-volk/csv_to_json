@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdlib.h>
-#include "../headers/header.h"
+#include "../headers/node.h"
 
 char DELIMITER = ',';
 
@@ -13,7 +13,7 @@ char* lineTokenize(char* line) {
 	node* tokenizedLineTail = NULL;
 
 	// Instantiate new node and token
-	node* tokenNode = node_createNode();
+	node* tokenNode = node_createEmptyNode();
 	char* token;
 
 	// Break off first token and create node from it
@@ -33,8 +33,8 @@ char* lineTokenize(char* line) {
 
 	}
 
-
-
+	// This is placeholder while building this function
+	return "under_development";
 
 }
 

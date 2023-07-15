@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../headers/header.h"
+#include "../headers/utils.h"
 
 // Number of arguments to be input by user
 const int NUM_OF_ARGS = 2;

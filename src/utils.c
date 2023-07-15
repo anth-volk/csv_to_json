@@ -1,7 +1,6 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../headers/header.h"
 
 // A function to both initialize a string and fill 
 // string with pre-determined string; returns char*

@@ -3,7 +3,9 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stddef.h>
-#include "../headers/header.h"
+#include "../headers/errorTesting.h"
+#include "../headers/node.h"
+#include "../headers/utils.h"
 
 // Main function
 int main(int argc, char* argv[]) {

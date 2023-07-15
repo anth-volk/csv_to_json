@@ -1,0 +1,1 @@
+char* strInitCpy(char* string);

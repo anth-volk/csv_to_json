@@ -28,4 +28,6 @@ int main(void) {
 	assert(tail == addedNode);
 	assert(head->word == TEST_INPUT);
 
+	return 0;
+
 }
